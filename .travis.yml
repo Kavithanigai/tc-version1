@@ -1,5 +1,14 @@
 language: node_js
- node_js: node
- cache:
-   directories:
-     - node_modules
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: n59tnbDZJNgh8hOTdfNKtkTubfKKDBsgfoT7g4gvCoQ6Z6Tk/ZWJ4uDbRAleQNsJUPtyi+lk8CE6ZFXjhT5prhumgQBH8DwtR0t1xa0PhaJ5u7VwEDBmcX4DKHFW6w3nHlICELlVomoRwtAdSkHBsx6a9zBgSUnVuVmeBSKdnIKl1l7MxbDQm1FZCgKAo36KPOTnwsqHbp8uEEwhad9l8mqyvZeUVIPGtJT3kACCpg9/vm+57/VrUQ8a71D4l1szer3eg+JJSbytTts8z/5AYc3dNvQ+GUBClOmWNgIaKyq5WcAJZmoWePRj3+9r+zD+mmZSoWCjb+eACykb18tfQ2HdHaRCWRWHC88tiRF+U8le5PEVTRcJX8mSz7oGtd/tke4+VZRgOPKYVcKk34qSU+hytQzJRy6PLPFUrUfzTX3WpL6a6A6LYPqLhctQ7B8zifRZ/fB4nW0zZxu86w7/FOA/SYlqiDaV6ZuT1jQQuWN7Cn0tEA3YBpec+vmWHTp4wEvj/q0160qaDFKWuuIoiOgSa9+1JcNN/VfgbB3T07mMQCdCs8svU1JYHtAsgJrqpqgQz1leCGbKsonAjBme1xtBOwZUjOKxMsf5jH3ZWngsPp19ua+SLimrm57l7Id316BELmuywu0KexO4kP9fC4uIKY42qatjFyoVspc3D9E=
+  app: polar-ocean-75971
+  on:
+    repo: Kavithanigai/travel-complete-client
