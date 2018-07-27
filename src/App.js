@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
-import LandingPageMain from './components/LandingPage/LandingPageMain';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
+const App =({children}) => {
     return (
       <div className="App">
-         <LandingPageMain />
-
+        {children}
       </div>
     );
-  }
 }
 
 export default App;

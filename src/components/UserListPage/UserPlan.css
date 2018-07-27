@@ -1,0 +1,169 @@
+
+.tc-feature-bcg{
+  margin: 0;
+  padding: 0;
+  background: #D3DBBA;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-position: cover;
+}
+
+
+.logoImage1{
+  float: left;
+  height: 60px;
+  width: auto;
+  margin-top: 3vh;
+  margin-left: 3vh;
+}
+
+/* ======== Main Nav ======= */
+
+
+.nav-main-menu{
+  width: 100%;
+  height: auto;
+  display:inline-block;
+  margin-bottom: 5vh;
+  float: right;
+  list-style: none;
+  margin-top: 10px;
+}
+
+
+.main-nav{
+  float: right;
+  list-style: none;
+  margin-top: -40px;
+  margin-right: 20px;
+  height:50px;
+}
+
+.main-nav li{
+  display: inline-block;
+  float: right;
+  margin-left: 40px;
+  height: 20px;
+  width: auto;
+  font-weight: bold;
+  font-size: 110%;
+  background-color: #A6B37D;
+  border-radius: 5px;
+  padding: 0.6vh;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+  color: #0d1642;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 80%;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #0d1642;
+}
+
+/* ======== Add New Plan ======================================== */
+.add-new-form{
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.form-group{
+  margin-bottom: 10px;
+}
+
+.form-label{
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 100%;
+  font-weight: bold;
+  padding-top: .1em;
+  padding-right: .25em;
+  width: 80%;
+  text-align: left;
+  float: left;
+  }
+
+  /* .form-group2>input{
+    height: 100px;
+  } */
+
+input{
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 100%;
+}
+
+textarea{
+  border: none;
+}
+
+.add-newform-h2{
+  margin-top: -35px;
+}
+
+.add-newform-h2::after{
+  background-color: #0d1642;
+  margin-top: 5px;
+
+}
+
+.title-cls{
+  margin-top: -10px;
+}
+
+.addnewplan-btn{
+  margin-top: 0;
+}
+/* ======== SMALL TAB TO IPADS IN PORTRAIT MODE(0-1023px) ======= */
+@media only screen and (max-width: 1023px){
+  .main-nav {
+    float: right;
+    list-style: none;
+    margin-top: -40px;
+    margin-right: 20px;
+    height: 70px;
+  }
+}
+
+  /* ======== BIGGER PHONES & SMALL TABLETS-IPAD(0-767px) ======= */
+  @media only screen and (max-width: 767px){
+    .logoImage1{
+      height: 50px;
+      width: auto;
+      margin-left: 1vh;
+    }
+    .main-nav {
+      margin-right: 1vh;
+      height: 50px;
+    }
+    .main-nav li{
+      margin-left: 20px;
+      margin-right: 10px;
+      font-size: 100%;
+    }
+    .add-newform-h2{
+      margin-top: -20px;
+    }
+  }
+  /* ======== SMALL PHONES(0-480px) ======= */
+  @media only screen and (max-width: 480px){
+    .main-nav {
+      margin-right: 0.4vh;
+    }
+    .main-nav li{
+      margin-left: 15px;
+      margin-right: 0;
+      font-size: 100%;
+    }
+    .add-newform-h2{
+      margin-top: -15px;
+    }
+  }

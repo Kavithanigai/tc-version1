@@ -50,8 +50,6 @@
 }
 
 .quotes-list>ol{
-  /* list-style-position: center; */
-  /* display: table; */
   margin: 20px auto;
   width: 80%;
   list-style-type: decimal;
@@ -62,3 +60,49 @@
 .quotes-list>ol>li{
   line-height: 1.5;
 }
+
+/* ======== BIG TAB TO IPADS IN LANDSCAPE MODE AND SMALL COMPUTERS(0-1200px) ======= */
+@media only screen and (max-width: 1200px){
+  .user-testimonials{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .quotes-list{
+    font-size: 100%;
+  }
+}
+
+/* ======== SMALL TAB TO IPADS IN PORTRAIT MODE(0-1023px) ======= */
+@media only screen and (max-width: 1023px){
+  .user-testimonials{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .quotes-list>ol{
+    font-size: 100%;
+  }
+}
+
+  /* ======== BIGGER PHONES & SMALL TABLETS-IPAD(0-767px) ======= */
+  @media only screen and (max-width: 767px){
+    .user-testimonials{
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+    }
+    .quotes-list>ol{
+      font-size: 100%;
+    }
+
+}
+  /* ======== SMALL PHONES(0-480px) ======= */
+  @media only screen and (max-width: 480px){
+    .user-testimonials{
+      width: 85%;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+    }
+    .quotes-list>ol{
+      font-size: 100%;
+    }
+
+  }

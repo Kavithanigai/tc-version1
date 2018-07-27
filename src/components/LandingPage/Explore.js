@@ -9,15 +9,15 @@ const Explore = (props) => {
       <div className='explore-tc'>
         <h2>Why TravelComplete?</h2>
         <h3>All your travel needs in one spot!!</h3>
-        <p className='explore-list'>
-        <ul >
+        <div className='explore-list'>
+        <ul className='explore-list'>
           <li>Make a list to pack for your trip.</li>
           <li>Plan your trip, places to visit and see visuals on map.</li>
           <li>See all your travel plans in a single page to print and share it with your friends and family.</li>
           <li>Once you are back from your trip, add your travel journal entry with pictures.</li>
           <li>Find the route that takes the shortest time for your travel needs(Reserved for future release).</li>
         </ul>
-        </p>
+        </div>
       </div>
 
       <div className='map-image'>

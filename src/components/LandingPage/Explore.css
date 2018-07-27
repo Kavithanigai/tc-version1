@@ -38,14 +38,11 @@
 }
 
 .explore-list>ul{
-  /* list-style-position: center; */
-  /* display: table; */
   margin: 20px auto;
   width: 55%;
   list-style: square;
   line-height: 1.5;
   text-align: left;
-
 }
 
 .map-image{
@@ -61,3 +58,51 @@
   width: 60%;
   height: 90%;
 }
+
+/* ======== BIG TAB TO IPADS IN LANDSCAPE MODE AND SMALL COMPUTERS(0-1200px) ======= */
+@media only screen and (max-width: 1200px){
+  .explore-list>ul{
+    font-size: 85%;
+    margin-bottom: 10px;
+  }
+}
+
+/* ======== SMALL TAB TO IPADS IN PORTRAIT MODE(0-1023px) ======= */
+@media only screen and (max-width: 1023px){
+
+  .explore-list>ul{
+    font-size: 110%;
+  }
+  .sample-map{
+    width: 60%;
+    height: 90%;
+  }
+}
+
+  /* ======== BIGGER PHONES & SMALL TABLETS-IPAD(0-767px) ======= */
+  @media only screen and (max-width: 767px){
+
+    .explore-list>ul{
+      margin: 15px auto;
+      line-height: 1.5;
+      font-size: 110%;
+    }
+}
+  /* ======== SMALL PHONES(0-480px) ======= */
+  @media only screen and (max-width: 480px){
+
+    .explore-list>ul{
+      margin: 20px auto;
+      line-height: 1.5;
+      font-size: 100%;
+    }
+
+    .map-image{
+      padding-top: 4vh;
+    }
+
+    .sample-map{
+      width: 70%;
+      height: 62%;
+    }
+  }
