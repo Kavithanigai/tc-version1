@@ -1,5 +1,9 @@
 language: node_js
- node_js: node
- cache:
-   directories:
-     - node_modules
+node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: duc5Tf5R06jryoTwCORzilykd87RqlM7Aamowr7Ap795v7ORczwAj7+QVU3gIi19OqyW2xy4gPD562YIQVmTBGy8b5mNbVwYwHk7rR10IGQWiHKsSjfi7GPEF3ojv/0f5KlkevCAMz7PLLOcQySYGSv35/mfi/6ge0fx4Mwr3jnnkh6lgKhNTJzgH/qaCgadR+IFLfN4Vxel0d+5nIVZbOOodTRQMKFSU2Ficy9oryXZ8xB6wp8gWyy8jMXRCivxCZ/yT/oPuxk8tPyzaGZmRsaRcoBtLuJ6DCFCoPAwgyBOZsIl+8jDv3+7GNSiNiIhO89q5g/cIrgs7La3iRrN31gT4qe9WaRcFElmvTU0/hg1H+GoX8voJDOoECKmj7nxNscVUsdJk9xHdPx89GTwtt9Ab3WwXI7RCByuMA94s1x5gNhooX0RfcFTpB2VJ7+EdfKC03zOXXgkSyE/EVd8CNphPInH2WtNNR/wwgRfoqrf9w80dYTdQ2RnmZ13yG15Z/BjH0+Bwj11EceZEIwZNeAxs2G8VXtE4J527PsxhjInaJMvDt+fmH+uZxU9Ip8KtTpJlFY5M1vuyLWa5g30bzXQL4xZDTbDHSMhjubTc/zCSDgRvvBpMx/i5iIHYo/OB4vnzsLwC4NbGItqpnhj9Ype9A3SykCzGwUhU/nl9F8=
+  app: evening-dusk-44484
+  on:
+    repo: Kavithanigai/tc-version1
