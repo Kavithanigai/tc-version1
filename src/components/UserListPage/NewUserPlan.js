@@ -3,7 +3,6 @@ import { reduxForm, Field } from 'redux-form';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createPost } from '../../actions';
-// import _  from 'lodash';
 import Menu from './Menu';
 import './UserPlan.css';
 
@@ -30,7 +29,6 @@ class NewUserPlan extends Component {
   }
 
   onSubmit(values) {
-    // console.log(values);
     this.props.createPost(values, () => {
       this.props.history.push('/userplan/existing');
     });
@@ -100,7 +98,7 @@ class NewUserPlan extends Component {
 function validate(values) {
   const errors = {};
 
-  //Validate inputs
+  //Validate Userplan inputs
   if (!values.title) {
     errors.title = 'Enter a title!';
   }
