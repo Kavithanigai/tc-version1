@@ -1,107 +1,122 @@
-import React,{Component} from 'react';
-import {reduxForm,Field} from 'redux-form';
-import {Link} from 'react-router-dom'; import _  from 'lodash';
-import Menu from './menu';
+import React, { Component } from 'react';
+import { reduxForm, Field } from 'redux-form';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { createPost } from '../../actions';
+// import _  from 'lodash';
+import Menu from './Menu';
 import './UserPlan.css';
 
-class NewUserPlan extends Component{
-    renderField(field){
-      return (
-        <div className="form-group title-cls">
+class NewUserPlan extends Component {
+  renderField(field) {
+    return (
+      <div className="form-group title-cls">
         <label className="form-label">{field.label}</label>
-        <input
-          type="text"
-          {...field.input}
-        />
-        {field.meta.error}
+        <input type="text" {...field.input} />
+        <div className="text-help">
+          {field.meta.touched ? field.meta.error : ''}
         </div>
-      );
-    }
-      renderTextAreaField(field){
-        return (
-          <div className="form-group title-cls">
-          <label className="form-label">{field.label}</label>
-          <input
-            rows="5"
-            type="textarea"
-            {...field.input}
-          />
-          {field.meta.error}
-          </div>
-        );
-    }
-    onSubmit(values){
-      console.log(values);
-    }
+      </div>
+    );
+  }
+  renderTextAreaField(field) {
+    return (
+      <div className="form-group title-cls">
+        <label className="form-label">{field.label}</label>
+        <textarea rows="3" {...field.input} />
+        {field.meta.touched ? field.meta.error : ''}
+      </div>
+    );
+  }
 
+  onSubmit(values) {
+    // console.log(values);
+    this.props.createPost(values, () => {
+      this.props.history.push('/userplan/existing');
+    });
+  }
 
-  render(){
-    const {handleSubmit} = this.props;
-    return(
-      <div className='tc-feature-bcg'>
+  render() {
+    const { handleSubmit } = this.props;
+    return (
+      <div className="tc-feature-bcg">
         <Menu />
-         <form className="add-new-form" onSubmit={handleSubmit(this.onSubmit.bind(this))} >
-           <h2 className="add-newform-h2">Add New Plan</h2>
+        <form
+          className="add-new-form"
+          onSubmit={handleSubmit(this.onSubmit.bind(this))}
+        >
+          <h2 className="add-newform-h2">Add New Plan</h2>
 
-           <Field
-             label="Title:"
-             name="title"
-             component={this.renderField}
-             autoComplete="none"
-           />
+          <Field
+            label="Title:"
+            name="title"
+            component={this.renderField}
+            autoComplete="none"
+          />
 
-           <Field
-             label="Packing list:"
-             name="packinglist"
-             component={this.renderTextAreaField}
-             autoComplete="none"
-             rows="5"
-           />
+          <Field
+            label="Packing list:"
+            name="packinglist"
+            component={this.renderTextAreaField}
+            autoComplete="none"
+          />
 
-           <Field
-             label="Destination:"
-             name="destination"
-             component={this.renderField}
-             autoComplete="none"
-           />
+          <Field
+            label="Destination:"
+            name="destination"
+            component={this.renderField}
+            autoComplete="none"
+          />
 
-           <Field
-             label="Trip Notes:"
-             name="tripnotes"
-             component={this.renderTextAreaField}
-             autoComplete="none"
-             rows="5"
-           />
+          <Field
+            label="Trip Notes:"
+            name="tripnotes"
+            component={this.renderTextAreaField}
+            autoComplete="none"
+          />
 
-           <Field
+          <Field
             label="Feedback:"
-             name="feedback"
-             component={this.renderTextAreaField}
-             autoComplete="none"
-             rows="5"
-           />
+            name="feedback"
+            component={this.renderTextAreaField}
+            autoComplete="none"
+          />
 
+          <button className="addnewplan-save-btn" type="submit">
+            Add Plan
+          </button>
 
-           <button className="addnewplan-btn" type="submit">Add Plan!</button>
-           
-         </form>
+          <Link to="/userplan/existing">
+            <button className="addnewplan-cancel-btn" type="submit">
+              Cancel
+            </button>
+          </Link>
+        </form>
       </div>
     );
   }
 }
 
-function validate(values){
+function validate(values) {
   const errors = {};
 
   //Validate inputs
-  if(!values.title){
-    errors.title = "Enter a title!";
+  if (!values.title) {
+    errors.title = 'Enter a title!';
   }
-  if(!values.destination){
-    errors.destination = "Enter a destination!";
+  if (!values.destination) {
+    errors.destination = 'Enter a destination!';
   }
 
   return errors;
 }
 
-export default reduxForm({validate, form: 'addnewplan'})(NewUserPlan);
+export default reduxForm({
+  validate,
+  form: 'addnewplan'
+})(
+  connect(
+    null,
+    { createPost }
+  )(NewUserPlan)
+);

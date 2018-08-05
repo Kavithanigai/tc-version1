@@ -1,55 +1,55 @@
-.user-testimonials{
+.user-testimonials {
   width: 70%;
   height: auto;
   top: 50%;
   left: 50%;
-   position: relative;
+  position: relative;
   transform: translate(-50%, -50%);
   padding-top: 5vh;
   padding-bottom: 5vh;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
-#road-image{
+#road-image {
   /* background-image: url(../img/travelCompleteBckgrd.jpg); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../img/countryside.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/countryside.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
-  margin:0;
-  padding:0;
-
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
 }
 
-.user-testimonials>h2,.user-testimonials>h4{
+.user-testimonials > h2,
+.user-testimonials > h4 {
   margin: 10px;
   display: inline;
 }
 
-.user-testimonials>h4{
+.user-testimonials > h4 {
   font-size: 90%;
   font-style: italic;
   font-weight: 400;
 }
 
-
-.quotes-list{
+.quotes-list {
   width: 100%;
   height: auto;
   line-height: 1.5;
   margin-top: 5vh;
-
 }
 
-.quotes-list>ol{
+.quotes-list > ol {
   line-height: 2;
   margin-top: 10px;
 }
 
-.quotes-list>ol{
+.quotes-list > ol {
   margin: 20px auto;
   width: 80%;
   list-style-type: decimal;
@@ -57,52 +57,50 @@
   text-align: left;
 }
 
-.quotes-list>ol>li{
+.quotes-list > ol > li {
   line-height: 1.5;
 }
 
 /* ======== BIG TAB TO IPADS IN LANDSCAPE MODE AND SMALL COMPUTERS(0-1200px) ======= */
-@media only screen and (max-width: 1200px){
-  .user-testimonials{
+@media only screen and (max-width: 1200px) {
+  .user-testimonials {
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
-  .quotes-list{
+  .quotes-list {
     font-size: 100%;
   }
 }
 
 /* ======== SMALL TAB TO IPADS IN PORTRAIT MODE(0-1023px) ======= */
-@media only screen and (max-width: 1023px){
-  .user-testimonials{
+@media only screen and (max-width: 1023px) {
+  .user-testimonials {
     padding-top: 2vh;
     padding-bottom: 2vh;
   }
-  .quotes-list>ol{
+  .quotes-list > ol {
     font-size: 100%;
   }
 }
 
-  /* ======== BIGGER PHONES & SMALL TABLETS-IPAD(0-767px) ======= */
-  @media only screen and (max-width: 767px){
-    .user-testimonials{
-      padding-top: 2vh;
-      padding-bottom: 2vh;
-    }
-    .quotes-list>ol{
-      font-size: 100%;
-    }
-
-}
-  /* ======== SMALL PHONES(0-480px) ======= */
-  @media only screen and (max-width: 480px){
-    .user-testimonials{
-      width: 85%;
-      padding-top: 2vh;
-      padding-bottom: 2vh;
-    }
-    .quotes-list>ol{
-      font-size: 100%;
-    }
-
+/* ======== BIGGER PHONES & SMALL TABLETS-IPAD(0-767px) ======= */
+@media only screen and (max-width: 767px) {
+  .user-testimonials {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
   }
+  .quotes-list > ol {
+    font-size: 100%;
+  }
+}
+/* ======== SMALL PHONES(0-480px) ======= */
+@media only screen and (max-width: 480px) {
+  .user-testimonials {
+    width: 85%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .quotes-list > ol {
+    font-size: 100%;
+  }
+}

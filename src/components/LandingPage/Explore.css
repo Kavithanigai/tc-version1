@@ -1,43 +1,44 @@
-.explore{
+.explore {
   width: 100%;
   height: 100%;
-  padding-top: 5vh;
+  /* padding-top: 5vh; */
   text-align: center;
   color: white;
   font-weight: 500;
   /* background-color: #f7f7f7; */
 }
 
-#antique-backdrop-image{
+#antique-backdrop-image {
   /* background-image: url(../img/travelCompleteBckgrd.jpg); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../img/antique-backdrop.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/antique-backdrop.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100%;
-  margin:0;
-  padding:0;
-
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
 }
 
-
-.explore-tc{
+.explore-tc {
   width: 100%;
   height: auto;
   line-height: 1.5;
   margin-top: 2vh;
 }
 
-.explore-tc>h2,.explore-tc>h3{
+.explore-tc > h2,
+.explore-tc > h3 {
   margin: 10px;
 }
 
-.explore-list{
+.explore-list {
   line-height: 2;
   margin-top: 10px;
 }
 
-.explore-list>ul{
+.explore-list > ul {
   margin: 20px auto;
   width: 55%;
   list-style: square;
@@ -45,7 +46,11 @@
   text-align: left;
 }
 
-.map-image{
+.indented-list {
+  margin-left: 20px;
+}
+
+.map-image {
   padding-top: 3vh;
   width: 100%;
   height: 50%;
@@ -54,55 +59,52 @@
   /* background: url(../img/crisp_paper_ruffles.png); */
 }
 
-.sample-map{
+.sample-map {
   width: 60%;
   height: 90%;
 }
 
 /* ======== BIG TAB TO IPADS IN LANDSCAPE MODE AND SMALL COMPUTERS(0-1200px) ======= */
-@media only screen and (max-width: 1200px){
-  .explore-list>ul{
-    font-size: 85%;
+@media only screen and (max-width: 1200px) {
+  .explore-list > ul {
+    font-size: 110%;
     margin-bottom: 10px;
   }
 }
 
 /* ======== SMALL TAB TO IPADS IN PORTRAIT MODE(0-1023px) ======= */
-@media only screen and (max-width: 1023px){
-
-  .explore-list>ul{
+@media only screen and (max-width: 1023px) {
+  .explore-list > ul {
     font-size: 110%;
   }
-  .sample-map{
+  .sample-map {
     width: 60%;
     height: 90%;
   }
 }
 
-  /* ======== BIGGER PHONES & SMALL TABLETS-IPAD(0-767px) ======= */
-  @media only screen and (max-width: 767px){
-
-    .explore-list>ul{
-      margin: 15px auto;
-      line-height: 1.5;
-      font-size: 110%;
-    }
-}
-  /* ======== SMALL PHONES(0-480px) ======= */
-  @media only screen and (max-width: 480px){
-
-    .explore-list>ul{
-      margin: 20px auto;
-      line-height: 1.5;
-      font-size: 100%;
-    }
-
-    .map-image{
-      padding-top: 4vh;
-    }
-
-    .sample-map{
-      width: 70%;
-      height: 62%;
-    }
+/* ======== BIGGER PHONES & SMALL TABLETS-IPAD(0-767px) ======= */
+@media only screen and (max-width: 767px) {
+  .explore-list > ul {
+    margin: 15px auto;
+    line-height: 1.5;
+    font-size: 110%;
   }
+}
+/* ======== SMALL PHONES(0-480px) ======= */
+@media only screen and (max-width: 480px) {
+  .explore-list > ul {
+    margin: 20px auto;
+    line-height: 1.5;
+    font-size: 100%;
+  }
+
+  .map-image {
+    padding-top: 4vh;
+  }
+
+  .sample-map {
+    width: 70%;
+    height: 62%;
+  }
+}
