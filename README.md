@@ -2,7 +2,7 @@
 App for all your travel needs - from packing list to trip planning to journal entry.
 <p>Live version of app:  <a href="https://evening-dusk-44484.herokuapp.com/">https://evening-dusk-44484.herokuapp.com/</a></p>
 
-![landing page](<img width="1055" alt="tclandingpage" src="https://user-images.githubusercontent.com/33758117/43700946-59cdaef2-9909-11e8-969c-b2efc57aacff.png">)
+## Landing page(<img width="1055" alt="tclandingpage" src="https://user-images.githubusercontent.com/33758117/43700946-59cdaef2-9909-11e8-969c-b2efc57aacff.png">)
 
 ![SignupLogin page](<img width="1058" alt="tcsignuplogin" src="https://user-images.githubusercontent.com/33758117/43700956-6514fff4-9909-11e8-851a-b55710869d46.png">)
 
