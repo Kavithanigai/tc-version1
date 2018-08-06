@@ -97,13 +97,11 @@ class PlanView extends Component {
           <div className="plan-pack">
             <div className="container">
               <div className="row">
-                <div className="span-1-of-2">
-                  <br />
-                  <h4>
-                    <center>Packing List:</center>
-                  </h4>
-                  <br /> {this.splitString(userplan.packinglist)}
-                </div>
+                <br />
+                <h4>
+                  <center>Packing List:</center>
+                </h4>
+                <br /> {this.splitString(userplan.packinglist)}
               </div>
             </div>
           </div>
@@ -111,13 +109,11 @@ class PlanView extends Component {
           <div className="plan-notes">
             <div className="container">
               <div className="row">
-                <div className="span-1-of-2">
-                  <br />
-                  <h4>
-                    <center>Trip Notes:</center>
-                  </h4>
-                  <br /> <p>{userplan.tripnotes}</p>
-                </div>
+                <br />
+                <h4>
+                  <center>Trip Notes:</center>
+                </h4>
+                <br /> <p>{userplan.tripnotes}</p>
               </div>
             </div>
           </div>
