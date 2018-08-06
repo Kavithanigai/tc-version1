@@ -4,24 +4,26 @@ App for all your travel needs - from packing list to trip planning to journal en
 
 ![landing page]()
 
+![SignupLogin page]()
+
 ![Signup page]()
 
-![login page]()
+![Login page]()
 
-![register page]()
+![Add plan page]()
 
-![home page]()
+![Existing plan page]()
 
-![add screen page]()
-
+![Plan view page]()
 
 <h2>Functionality</h2>
 <p>This app's functionality includes:</p>
 <ul>
-	<li>Add a budget item including date, amount, and type</li>
-	<li>Display a user's list of budget items</li>
-	<li>Render a user's monthly budget summary based on budget items</li>
-	<li>Delete a user's budget item</li>
+	<li>Add a travel plan with title, packing list, destination, tripnotes and feedback.</li>
+	<li>Display a user's list of travel plans.</li>
+	<li>Render a user's individual plan view.</li>
+	<li>Delete a user's travel plan.</li>
+	<li>Check Weather.</li>
 </ul>
 
 <h2>Technology</h2>
