@@ -1,12 +1,13 @@
 import { AUTH_USER, AUTH_ERROR } from './types';
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
+const url = `${API_BASE_URL}`;
 
 export const signup = (formProps, callback) => async dispatch => {
   try {
-    const response = await axios.post(
-      'http://localhost:3090/signup',
-      formProps
-    );
+    // const url = `${API_BASE_URL}`;
+    console.log('url=' + url);
+    const response = await axios.post(`${url}/signup`, formProps);
 
     dispatch({ type: AUTH_USER, payload: response.data.token });
     localStorage.setItem('token', response.data.token);
@@ -21,10 +22,7 @@ export const signup = (formProps, callback) => async dispatch => {
 
 export const signin = (formProps, callback) => async dispatch => {
   try {
-    const response = await axios.post(
-      'http://localhost:3090/signin',
-      formProps
-    );
+    const response = await axios.post(`${url}/signin`, formProps);
 
     dispatch({ type: AUTH_USER, payload: response.data.token });
     localStorage.setItem('token', response.data.token);
@@ -43,7 +41,7 @@ export const signout = () => {
 };
 
 export const FETCH_POSTS = 'fetch_posts';
-const ROOT_URL = 'http://localhost:3090/userplans';
+const ROOT_URL = `${url}/userplans`;
 export const fetchPosts = () => async dispatch => {
   try {
     console.log('In fetchPosts1');
