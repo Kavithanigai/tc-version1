@@ -1,6 +1,6 @@
 # Travel Complete
 App for all your travel needs - from packing list to trip planning to journal entry.
-<p>A working prototype of this app can be viewed at <a href="http://laughing-elion-ce8a11.netlify.com">http://laughing-elion-ce8a11.netlify.com</a></p>
+<p>Live version of app:  <a href="https://evening-dusk-44484.herokuapp.com/"https://evening-dusk-44484.herokuapp.com/</a></p>
 
 ![landing page]()
 
