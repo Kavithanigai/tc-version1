@@ -1,6 +1,6 @@
 # Travel Complete
 App for all your travel needs - from packing list to trip planning to journal entry.
-<p>Live version of app:  <a href="https://evening-dusk-44484.herokuapp.com/"https://evening-dusk-44484.herokuapp.com/</a></p>
+<p>Live version of app:  <a href="https://evening-dusk-44484.herokuapp.com/">https://evening-dusk-44484.herokuapp.com/</a></p>
 
 ![landing page]()
 
