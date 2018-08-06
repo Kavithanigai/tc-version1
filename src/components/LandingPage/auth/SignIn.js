@@ -19,8 +19,8 @@ class SignIn extends Component {
       <div className="form-bcg">
         <div className="demo-div">
           <h3 className="demo-h3">Demo Account:</h3>
-          <p className="demo-p1">Email : browser567@gmail.com</p>
-          <p className="demo-p2">Password: 12345</p>
+          <p className="demo-p1">Email : demo@test.com</p>
+          <p className="demo-p2">Password: test</p>
         </div>
         <form
           className="login-form login-register-form login-box"
