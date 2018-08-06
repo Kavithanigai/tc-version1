@@ -46,7 +46,7 @@ App for all your travel needs - from packing list to trip planning to journal en
 	<li>Passport</li>
 </ul>
 
-<h3>Platforms</h3>
+<h3>Platforms &/ Tools</h3>
 <ul>
 	<li>Heroku</li>
   <li>TravisCI</li>
