@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchPost, deletePost, updatePost } from '../../actions';
+import { fetchPost, deletePost } from '../../actions';
 import Menu from './Menu';
 import './UserPlan.css';
+import './grid.css';
 
 class PlanView extends Component {
   componentDidMount() {
@@ -64,42 +65,76 @@ class PlanView extends Component {
             Delete Plan
           </button>
           <div>
-            <p> Update plan reserved for later release. </p>
+            <p> Update plan reserved for future release. </p>
           </div>
+
           <div className="plan-title">
-            <h2>Title: {userplan.title}</h2>
+            <div className="container">
+              <div className="row">
+                <div className="col-12">
+                  <h2>Title: {userplan.title}</h2>
+                </div>
+              </div>
+            </div>
           </div>
           <br />
+
           <div className="plan-dest">
-            <br />
-            <h4>
-              <center>Destination:</center>
-            </h4>
-            <br /> <p>{userplan.destination}</p>
+            <div className="container">
+              <div className="row">
+                <div className="col-12">
+                  <br />
+                  <h4>
+                    <center>Destination:</center>
+                  </h4>
+                  <br /> <p>{userplan.destination}</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <br />
+
           <div className="plan-pack">
-            <br />
-            <h4>
-              <center>Packing List:</center>
-            </h4>
-            <br /> {this.splitString(userplan.packinglist)}
+            <div className="container">
+              <div className="row">
+                <div className="span-1-of-2">
+                  <br />
+                  <h4>
+                    <center>Packing List:</center>
+                  </h4>
+                  <br /> {this.splitString(userplan.packinglist)}
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="plan-notes">
-            <br />
-            <h4>
-              <center>Trip Notes:</center>
-            </h4>
-            <br /> <p>{userplan.tripnotes}</p>
+            <div className="container">
+              <div className="row">
+                <div className="span-1-of-2">
+                  <br />
+                  <h4>
+                    <center>Trip Notes:</center>
+                  </h4>
+                  <br /> <p>{userplan.tripnotes}</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <br />
 
           <div className="plan-feedback">
-            <br />
-            <h4>
-              <center>Feedback:</center>
-            </h4>
-            <br /> <p>{userplan.feedback}</p>
+            <div className="container">
+              <div className="row">
+                <div className="col-12">
+                  <br />
+                  <h4 className="feedback-h4">Feedback:</h4>
+                  <br /> <p>{userplan.feedback}</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <br />
         </div>
       </div>
     );

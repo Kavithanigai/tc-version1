@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { reduxForm, Field, initialize } from 'redux-form';
+import { reduxForm, Field } from 'redux-form';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchPost, updatePost } from '../../actions';
-// import _  from 'lodash';
 import Menu from './Menu';
-import NewUserPlan from './NewUserPlan';
 import './UserPlan.css';
 
 class UpdateUserPlan extends Component {
